@@ -1,0 +1,118 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #fefefe;
+    font-family: 'Trebuchet MS';
+}
+
+header.top-header{
+    background: #101010;
+    color: #fefefe;
+    padding: 1% 0% 1% 5%;
+    font-size: 1vw;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    z-index: 77;
+}
+
+header.top-header h1{
+    margin: 0;
+}
+
+aside{
+    background: #2b7a78;
+    color: #000000;
+    float: left;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    margin-top: 55px;
+}
+
+aside ul{
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li{
+    list-style-type: none;
+    padding: 5% 0% 0% 5%;
+    margin: 0;
+}
+
+aside ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fefefe;
+    padding: 2%;
+}
+
+li a:hover{
+    color: #000000;
+    font-weight: 600;
+}
+
+.active{
+    background: #fefefe;
+    color: #000000;
+    font-weight: 600;
+}
+
+article{
+    padding-left: 25%;
+    padding-top: 55px;
+    padding-right: 5%;    
+}
+
+section{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+header.article-header h1{
+    font-size: 2.5vw;
+    font-weight: 800;
+    padding: 1% 0;
+    border-bottom: 3px solid #2b7a78;
+}
+
+section h1{
+    font-size: 1.7vw;
+    margin: 0;
+}
+
+p{
+    font-size: 1.2vw;
+    text-align: justify;
+}
+
+footer{
+    background: #101010;
+    z-index: 77;
+    padding: 1%;
+}
+
+footer h5{    
+    color: #fefefe;
+    font-size: 1vw;
+    font-weight: 100;
+    margin: 0.25%;
+    text-align: right;
+}
+
+footer h6{    
+    color: #fefefe;
+    font-size: 0.8vw;
+    font-weight: 100;
+    padding-left: 2%;
+    margin: 0.25%;
+    text-align: right;
+}

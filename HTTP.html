@@ -1,242 +1,232 @@
 <!DOCTYPE html>
+
 <html>
-<body>
-<head>
-<title>HTTP</title>	
-</head>
+    <head>
+        <title>HTTP</title>	
+    </head>
+    <body>
+        <h1>HTTP</h1>
+        <p>HTTP is based on a client-server architecture.</p>
+        <ul>
+            <li>Servers - origin server</li>
+            <li>Clients also know as (User Agents) - web browsers, web crawlers</li>
+        </ul>
+        <p>In addition, a communication protocol used to access resources on the World Wide Web. Invented by Tim-Berners Lee at CERN in 1989.</p>
 
-<h1>HTTP</h1>
-<p>HTTP is based on a client-server architecture.</p>
-	<ul>
-		<li>Servers - origin server</li>
-		<li>Clients also know as (User Agents) - web browsers, web crawlers</li>
-	</ul>
-<p>In addition, a communication protocol used to access resources on the World Wide Web. Invented by Tim-Berners Lee at CERN in 1989.</p>
+        <h2>HTTP with its Version History:</h2>
+        <ul>
+            <li>HTTP 0.9(1991)</li>
+            <li>HTTP 1.0(RFC 1945, May 1996) - get, header, post</li>
+            <li>HTTP 1.1(RFC 2068 Jan 1997; RFC 2616 June 1999), RFC 7230 - 7235(June 2014)</li>
+            <li>HTTP 2(RFC 7540 May 2015) - additional mechanism in the transmission of data with header compression that allows multi pleasing which is more enhanced than the previous versions.</li>
+        </ul>
 
-<h2>HTTP with its Version History:</h2>
-	<ul>
-		<li>HTTP 0.9(1991)</li>
-		<li>HTTP 1.0(RFC 1945, May 1996) - get, header, post</li>
-		<li>HTTP 1.1(RFC 2068 Jan 1997; RFC 2616 June 1999), RFC 7230 - 7235(June 2014)</li>
-		<li>HTTP 2(RFC 7540 May 2015) - additional mechanism in the transmission of data with header compression that allows multi pleasing which is more enhanced than the previous versions.</li>
-	</ul>
+        <p>HTTP uses a request message. In addition, it is a stateless communications protocol. We have here its functionalities:</p>
+        <ul>
+            <li>cache control</li>
+            <li>content media type(MIME)</li>
+            <li>persistent connection - it can be reuse</li>
+            <li>request pipelining/multiplexing - can have many request at a time.</li>
+            <li>authentication/authorization - talks about the security and identifies if the client can be verified and authorized at the same time.</li>
+        </ul>
 
-<p>HTTP uses a request message. In addition, it is a stateless communications protocol. We have here its functionalities:
-	<ul>
-		<li>cache control</li>
-		<li>content media type(MIME)</li>
-		<li>persistent connection - it can be reuse</li>
-		<li>request pipelining/multiplexing - can have many request at a time.</li>
-		<li>authentication/authorization - talks about the security and identifies if the client can be verified and authorized at the same time.</li>
-	</ul>
-</p>
+        <h2>HTTP Resource Addressing</h2>
+        <ul>
+            <li>scheme(http or https)</li>
+            <li>authority - domain name(resolved to an IP address DNS), host, post number and user information or authentication credentials.</li>
+            <li>path to resource(to resolve relative to the document on the server).</li>
+            <li>query - set of key = value pairs use: 
+                <ul>
+                    <li>(&)ampersand</li>
+                    <li>(?)delimeter</li>
+                    <li>(>)URL - encoded</li>
+                </ul>	
+            </li>
+            <li>fragment identifier - subsection</li>
+        </ul>
+        <h4>First: Request line:</h4>
+        <p>Method - Target - HTTP Protocol</p>
 
-<h2>HTTP Resource Addressing</h2>
-	<ul>
-		<li>scheme(http or https)</li>
-		<li>authority - domain name(resolved to an IP address DNS), host, post number and user information or authentication credentials.</li>
-		<li>path to resource(to resolve relative to the document on the server).</li>
-		<li>query - set of key = value pairs use: 
-			<ul>
-				<li>(&)ampersand</li>
-				<li>(?)delimeter</li>
-				<li>(>)URL - encoded</li>
-			</ul>	
-		</li>
-		<li>fragment identifier - subsection</li>
-	</ul>
-<h4>First: Request line:</h4>
-<p>Method - Target - HTTP Protocol</p>
+        <h3>Response Message:</h3>
+        <h4>First: status line</h4>
+        <p>Protocol - status code - status(reason phrase)</p>
 
-<h3>Response Message:</h3>
-<h4>First: status line</h4>
-<p>Protocol - status code - status(reason phrase)</p>
+        <h3>Message Header</h3>
+        <p>3 types:</p>
+        <ul>
+            <li>General - relate to the characteristics itself</li>
+            <li>Entity - characteristics of the body</li>
+            <li>Response</li>
+        </ul>	  
 
-<h3>Message Header</h3>
-<p>3 types:
-	<ul>
-		<li>General - relate to the characteristics itself</li>
-		<li>Entity - characteristics of the body</li>
-		<li>Response</li>
-	</ul>	
-</p>
+        <h2>Demonstration of Methods</h2>
+        <ul>
+            <li>content negatiation - an HTTP client</li>
+            <li>point of negatiation - accept, decept-encoding</li>
+            <li>MIME Type
+                <ul>
+                    <li>plain/html</li>
+                    <li>value/value - text, application - dependent, audio, image, video</li>
+                </ul>
+            </li>
+        </ul>
 
-<h2>Demonstration of Methods</h2>
-	<ul>
-		<li>content negatiation - an HTTP client</li>
-		<li>point of negatiation - accept, decept-encoding</li>
-		<li>MIME Type
-			<ul>
-				<li>plain/html</li>
-				<li>value/value - text, application - dependent, audio, image, video</li>
-			</ul>
-		</li>
-	</ul>
+        <h3>ACCEPT</h3>
+        <p>The value of accept is what will be rendered.</p>
 
-<h3>ACCEPT</h3>
-<p>The value of accept is what will be rendered.</p>
+        <h3>ACCEPT-ENCODING</h3>
+        <ul>
+            <li>fetch compressed format</li>
+            <li>ones received it will automatically uncompressed/deflate the date</li>
+        </ul>
+        <p>*note - without the ACCEPT-ENCODING it will fetch the uncompressed data</p>
 
-<h3>ACCEPT-ENCODING</h3>
-<p>
-	<ul>
-		<li>fetch compressed format</li>
-		<li>ones received it will automatically uncompressed/deflate the date</li>
-	</ul>
-*note - without the ACCEPT-ENCODING it will fetch the uncompressed data
-</p>
+        <h3>RANGE-REQUEST</h3>
+        <p>Perform partial content/resource retrieval using:</p>
+        <h3>ACCEPT-RANGES/RANGE HEADER</h3>
+        <p>If range not satisfiable, there's an error</p>
+        <h3>AUTHORIZATION/AUTHENTICATION</h3>
+        <ul>
+            <li>WebDAV can enable in WAMP, Apache modules</li>
+            <li>when you copy it also includes the DESTINATION</li>
+        </ul>
+        <p>*note - without the ACCEPT-ENCODING it will fetch the uncompressed data</p>
 
-<h3>RANGE-REQUEST</h3>
-<p>Perform partial content/resource retrieval using:</p>
-<h3>ACCEPT-RANGES/RANGE HEADER</h3>
-<p>If range not satisfiable, there's an error</p>
-<h3>AUTHORIZATION/AUTHENTICATION</h3>
-<p>
-	<ul>
-		<li>WebDAV can enable in WAMP, Apache modules</li>
-		<li>when you copy it also includes the DESTINATION</li>
-	</ul>
-*note - without the ACCEPT-ENCODING it will fetch the uncompressed data
-</p>
+        <h2>STANDARD METHOD</h2>
+        <ul>
+            <li>GET - fetch or simply select requiremen to all servers.</li>
+            <li>HEAD - retreive only metadata possibly to validate data</li>
+            <li>POST - perform resource, specific processing. In addition, if there is a post, there is a message body and is mostly used in submitting HTML from data.</li>
+            <li>PUT - hard to implement</li>
+            <li>DELETE - hard to implement</li>
+            <li>OPTIONS - tells what you can do</li>
+            <li>TRACE - allows the server to re-echo the request</li>
+            <li>CONNECT - create a secure connection and establish a tunnel.</li>
+        </ul>
 
-<h2>STANDARD METHOD</h2>
-	<ul>
-		<li>GET - fetch or simply select requiremen to all servers.</li>
-		<li>HEAD - retreive only metadata possibly to validate data</li>
-		<li>POST - perform resource, specific processing. In addition, if there is a post, there is a message body and is mostly used in submitting HTML from data.</li>
-		<li>PUT - hard to implement</li>
-		<li>DELETE - hard to implement</li>
-		<li>OPTIONS - tells what you can do</li>
-		<li>TRACE - allows the server to re-echo the request</li>
-		<li>CONNECT - create a secure connection and establish a tunnel.</li>
-	</ul>
+        <h2>SAFE METHOD</h2>
+        <p>Like read only, no expected change just simply fetching</p>
+        <ul>
+            <li>GET, HEAD, OPTIONS, TRACE</li>
+        </ul>
+        <h3>Idempotent Methods</h3>
+        <p>Intended effect on the server of multiple identical request.</p>
+        <ul>
+            <li>GET, HEAD, OPTIONS, TRACE, PUT, DELETE</li>
+        </ul>
+        <h3>Cacheable Methods</h3>
+        <p>Indicates that the response to a method is allowed to be stored for future use. In addition, it also saves on a bandwidth.</p>
+        <ul>
+            <li>GET, HEAD, POST</li>
+        </ul>
 
-<h2>SAFE METHOD</h2>
-<p>Like read only, no expected change just simply fetching
-	<ul>
-		<li>GET, HEAD, OPTIONS, TRACE</li>
-	</ul>
-</p>
-<h3>Idempotent Methods</h3>
-<p>Intended effect on the server of multiple identical request.
-	<ul>
-		<li>GET, HEAD, OPTIONS, TRACE, PUT, DELETE</li>
-	</ul>
-</p>
-<h3>Cacheable Methods</h3>
-<p>Indicates that the response to a method is allowed to be stored for future use. In addition, it also saves on a bandwidth.
-	<ul>
-		<li>GET, HEAD, POST</li>
-	</ul>
-</p>
+        <h2>STATUS CODE</h2>
 
-<h2>STATUS CODE</h2>
+        <h3>Informational(1xx)</h3>
+        <table style="width:100%, text-align:right">
+            <tr>
+                <th>Message</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Continue(100)</td>
+                <td>Gets a response that its OK and the client can proceed with the request or ignore if its already done.</td>
+            </tr>
+            <tr>
+                <td>Switching Protocol(101)</td>
+                <td>Asks the server if it can switch protocol.</td>
+            </tr>
+        </table>
 
-<h3>Informational(1xx)</h3>
-<table style="width:100%, text-align:right">
-<tr>
-    <th>Message</th>
-    <th>Description</th>
-</tr>
-<tr>
-    <td>Continue(100)</td>
-    <td>Gets a response that its OK and the client can proceed with the request or ignore if its already done.</td>
-</tr>
-<tr>
-    <td>Switching Protocol(101)</td>
-    <td>Asks the server if it can switch protocol.</td>
-</tr>
-</table>
-
-<h3>Success(2xx)</h3>
-<table style="width:100%, text-align:right">
-<tr>
-    <td>Ok(200)</td>
-    <td>The request succeeded.</td>
-</tr>
-<tr>
-	<td>Created(201)</td>
-	<td>The request has been fulfilled and a new source is created.</td>
-</tr>
-<tr>
-	<td>Accepted(202)</td>
-	<td>The request has been accepted but its not yet done.</td>
-</tr>
-<tr>
-	<td>No Content(204)</td>
-	<td>Successfully processed but doesn't return any content.</td>
-</tr>
-</table>
+        <h3>Success(2xx)</h3>
+        <table style="width:100%, text-align:right">
+            <tr>
+                <td>Ok(200)</td>
+                <td>The request succeeded.</td>
+            </tr>
+            <tr>
+                <td>Created(201)</td>
+                <td>The request has been fulfilled and a new source is created.</td>
+            </tr>
+            <tr>
+                <td>Accepted(202)</td>
+                <td>The request has been accepted but its not yet done.</td>
+            </tr>
+            <tr>
+                <td>No Content(204)</td>
+                <td>Successfully processed but doesn't return any content.</td>
+            </tr>
+        </table>
 
 
-<h3>Redirection(3xx)</h3>
-<table style="width:100%, text-align:right">
-<tr>
-	<td>Multiple Choices(300)</td>
-	<td>The request has many possible response.</td>
-</tr>
-<tr>
-	<td>Moved Permanently(301)</td>
-	<td>The requested page has moved to a new URL. </td>
-</tr>
-<tr>
-	<td>Found(302)</td>
-	<td>The requested page has moved to a new URL temporarily.</td>
-</tr>
-<tr>
-	<td>See Other(304)</td>
-	<td>The requested page can be found in a different URL</td>
-</tr>
-<tr>
-	<td>Not Modified(305)</td>
-	<td>The requested page has not been modified.</td>
-</tr>
-</table>
+        <h3>Redirection(3xx)</h3>
+        <table style="width:100%, text-align:right">
+            <tr>
+                <td>Multiple Choices(300)</td>
+                <td>The request has many possible response.</td>
+            </tr>
+            <tr>
+                <td>Moved Permanently(301)</td>
+                <td>The requested page has moved to a new URL. </td>
+            </tr>
+            <tr>
+                <td>Found(302)</td>
+                <td>The requested page has moved to a new URL temporarily.</td>
+            </tr>
+            <tr>
+                <td>See Other(304)</td>
+                <td>The requested page can be found in a different URL</td>
+            </tr>
+            <tr>
+                <td>Not Modified(305)</td>
+                <td>The requested page has not been modified.</td>
+            </tr>
+        </table>
 
-<h3>Client Error(4xx)</h3>
-<table style="width:100%, text-align:right">
-<tr>
-	<td>Bad Request(400)</td>
-	<td>The request cannot be understand due to invalid syntax.</td>
-</tr>
-<tr>
-	<td>Unauthorized(401)</td>
-	<td>The requested is available but the server refuse to respond.</td>
-</tr>
-<tr>
-	<td>Forbidden(403)</td>
-	<td>The client doesn't have access to the right content.</td>
-</tr>
-<tr>
-	<td>Not Found(404)</td>
-	<td>The server can't find the requested resource.</td>
-</tr>
-<tr>
-	<td>Request Timeout(408)</td>
-	<td>The server is time out and is waiting for the request.</td>
-</tr>
-</table>
+        <h3>Client Error(4xx)</h3>
+        <table style="width:100%, text-align:right">
+            <tr>
+                <td>Bad Request(400)</td>
+                <td>The request cannot be understand due to invalid syntax.</td>
+            </tr>
+            <tr>
+                <td>Unauthorized(401)</td>
+                <td>The requested is available but the server refuse to respond.</td>
+            </tr>
+            <tr>
+                <td>Forbidden(403)</td>
+                <td>The client doesn't have access to the right content.</td>
+            </tr>
+            <tr>
+                <td>Not Found(404)</td>
+                <td>The server can't find the requested resource.</td>
+            </tr>
+            <tr>
+                <td>Request Timeout(408)</td>
+                <td>The server is time out and is waiting for the request.</td>
+            </tr>
+        </table>
 
-<h3>Server Error(5xx)</h3>
-<table style="width:100%, text-align:right">
-<tr>
-	<td>Internal Server Error(500)</td>
-	<td>Error message, which the server doesn't how to handle.</td>
-</tr>
-<tr>
-	<td>Bad Gateway(502)</td>
-	<td>Received an invalid response from the hanlder request.</td>
-</tr>
-<tr>
-	<td>Service Unavailable(503)</td>
-	<td>The server is not available.</td>
-</tr>
-<tr>
-	<td>Gateway Timeout(504)</td>
-	<td>The error response is given when the server is acting a gateway and can't get a response in time.</td>
-</tr>
-</table>
-
-</body>
+        <h3>Server Error(5xx)</h3>
+        <table style="width:100%, text-align:right">
+            <tr>
+                <td>Internal Server Error(500)</td>
+                <td>Error message, which the server doesn't how to handle.</td>
+            </tr>
+            <tr>
+                <td>Bad Gateway(502)</td>
+                <td>Received an invalid response from the hanlder request.</td>
+            </tr>
+            <tr>
+                <td>Service Unavailable(503)</td>
+                <td>The server is not available.</td>
+            </tr>
+            <tr>
+                <td>Gateway Timeout(504)</td>
+                <td>The error response is given when the server is acting a gateway and can't get a response in time.</td>
+            </tr>
+        </table>
+    </body>
 </html>
 
 REFERENCES:
