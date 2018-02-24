@@ -1,0 +1,15 @@
+HTTP
+	Stateless protocol(allows communication between different hosts and clients and also supports a mix of network configurations) (from https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
+	Communication usually through TCP/IP
+	Uses port 80 as its default port
+	Communication through hosts and clients is via request and response
+
+Additional concepts 
+	
+URL (Universal Resource Locator) 
+	Also known as web address
+	Used to find a particular website
+	Associated with an IP address
+
+WWW (World Wide Web)
+	Way of information exchange through the internet
