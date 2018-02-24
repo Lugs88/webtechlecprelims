@@ -1,0 +1,6 @@
+Introduction To HTML
+
+	HTML (Hypertext MarkUp Language) is a devised language of computer that makes a website. 
+Those websites can be seen or viewed by anyone in this world that are connected in the Internet. 
+HTML is easy to learn, with basics which people are accessible. It is also very powerful for what 
+it may or can create. It is currently being updated and being versioned. W3C is the one in charge of it. 
