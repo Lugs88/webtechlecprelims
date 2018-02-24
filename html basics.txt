@@ -1,0 +1,14 @@
+How does HTML work?
+	Html, like any other computer language, consists of a series of code. These codes are called html elements. The code is then saved onto an html file which will be then viewed by a browser like chrome or firefox. The browser translates or compiles the code into its visible form.
+
+What are tags?
+	 Tags are the basic building block of an html document. They are the ones surrounded by the angle-brackets. Tags can’t be seen on the rendered page but their effects are.
+They are basically the ones responsible for manipulating the data the user has entered.
+Tags are basically structured as:
+	<tag> content </tag>
+
+Anatomy of an HTML element
+	1. The opening tag- this is made up of the name of the element surrounded by angle-brackets. This states where the element shall begin.
+	2. The closing tag- same as the opening tag with regards to structure but it instead specifies the end of the element.
+	3. The content- this can be considered as the data being manipulated by html tags. Most often than not, they are encased within the tags.
+	4. The element- the element can be considered as the entirety of 
