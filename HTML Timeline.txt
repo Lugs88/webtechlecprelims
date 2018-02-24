@@ -1,0 +1,57 @@
+History Timeline
+
+1. HTML 1.0
+    It was the first HTML that was released in thw whole world. 
+    Only few people around the world are involved in the web creation
+    at that time, ant it is very limited too. There is nothing much to 
+    be done with it. 
+
+2. HTML 2.0
+     It includes all features of the HTML 1.0 but added some on it to be mixed.
+     It became the standard for designing a website in 1997 January and has defined 
+     many of the HTML features for the very first time. 
+
+3. HTML 3.0
+    HTML is becoming more popular and because of that more and more people are now using it. But a trouble is started.
+    The Netscape Company was the  leader of of the web market at that time, with their Netscape Navigator. To answer 
+    the please of many of the HTML authors, they have developed the proprietery tags and attributes into their Netscape
+    Navigator, and it was calle Netscape Navigation Tags. 
+
+    This became a big problem because other browsers have tried to replicate those tags for them not to be left behind.
+    This means that if you have designed a webpage using  the Netscape, the page will not be good in other browsers. This
+    becomes a confusion to others. 
+     
+    At this time, Dave Ragget, intoduced a new draft of HTML, which is the HTML 3.0. It includes many new features of 
+    the HTML, and he promised that this will be more powerful than the previous ones. But the browsers are very slow in
+    adapting these new features, and adding only few and nevermind the rest. 
+     
+    But the authors noted that there will always be improvements in the future because it is designed to be a modular.  
+    This only means that it will be easier for many other companies to add in stages. 
+
+4. HTML 3.2
+     The tags of some specific browsers came. It became a need that is to be found.  The W3C (World Wide Web Consortium) 
+     was created in 1994 to keep the language on evolving. This work was named WILBUR and later become known as HTML 3.2. 
+     Most of the extension tags had been introdiced by the Netscape. 
+
+5. HTML 4.01
+    HTML 4.01 was a very large evolution of the standards of the HTML.  It has a code named COUGAR.  Most of its functuons
+    and features came from the HTML 3.0, as well as the old tags and the CSS or the Cascading styleSheet. 
+     
+    W3c recommended this in 1997 December and become the offical standard in 1998, April.  Modern browsers also have a 
+    very good improvement. 
+
+    While HTML 4.01 was out in a little while , the documentation have been revised and been corrected on some of its features.
+
+6. XHTML 1.0 
+     At the 21st Century the w3C has issued the XHTML specification. Since 2000, January 26, it became the standard with the 
+     HTML 4.01 have their new specifications to work. It is a new branch for the HTML that incorporates the HTML. There aren't 
+     many new tags and attributes ib the XHTML but other things have changed which makes it more accessible and functional. 
+     It is a new set of coding rules. 
+
+7. HTML 5
+     It was in this time that many of pragmatic web technology fans,  programmers and specification writers started to build
+     their own language, and not using the W3C procedures.  They were called the WHATG ( Web Hypertext Application Technology Group)
+     and developed a new specification. 
+ 
+    HTML 5 is designed for the web, today, tomorrow and in the future. It is the spec that will be still worjing in at least a
+    few more decades so it's development is very slow and is considered.
