@@ -1,0 +1,6 @@
+History
+
+HTML ( Hypertext Markup Language) has already been 7 years in existence. 
+It has been evolved from being a very simple language into from being a very complex language, 
+which makes web developers make a very interesting and different web pages with many tricks like
+animated images and sounds.
